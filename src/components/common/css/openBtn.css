@@ -1,0 +1,141 @@
+.openButton {
+	cursor: pointer;
+}
+
+.ring-anim {
+	stroke: #685dc5;
+	animation: fillCircle 0.2s linear forwards;
+}
+@keyframes fillCircle {
+	30% {
+		stroke-dasharray: 47.1, 47.1;
+		stroke-dashoffset: 47.1;
+	}
+	70% {
+		stroke-dasharray: 47.1, 47.1;
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dasharray: 94.2, 0;
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes fillCircle2 {
+	100% {
+		stroke-dasharray: 94.2, 0;
+		stroke-dashoffset: 0;
+	}
+}
+.bgCircle {
+	fill: #dadada;
+	transition: fill;
+	transition-delay: 0.5s;
+}
+.bg-circle-anim {
+	fill: #685dc5;
+	transition: fill;
+	transition-delay: 0.5s;
+}
+@keyframes colorChange {
+	to {
+		fill: #685dc5;
+	}
+}
+@keyframes colorChangeBack {
+	from {
+		fill: #685dc5;
+	}
+	to {
+		fill: #dadada;
+	}
+}
+.circle-anim {
+	animation: circleSmall 0.2s 0.2s linear forwards;
+}
+
+@keyframes circleSmall {
+	from {
+		r: 15;
+	}
+	to {
+		r: 0;
+	}
+}
+@keyframes circleSmallBack {
+	from {
+		r: 0;
+	}
+	to {
+		r: 15;
+	}
+}
+.line-1-anim {
+	animation: line1Spin 0.4s linear forwards;
+}
+@keyframes line1Spin {
+	0% {
+		transform-box: fill-box;
+		transform: rotate(0deg);
+		transform-origin: center;
+	}
+	50% {
+		transform-box: fill-box;
+		transform: rotate(180deg);
+		transform-origin: center;
+		stroke: #685dc5;
+	}
+	100% {
+		transform-box: fill-box;
+		transform: rotate(360deg);
+		transform-origin: center;
+		stroke: white;
+	}
+}
+@keyframes line1SpinBack {
+	0% {
+		transform-box: fill-box;
+		transform: rotate(360deg);
+		transform-origin: center;
+	}
+	100% {
+		transform-box: fill-box;
+		transform: rotate(0deg);
+		transform-origin: center;
+		stroke: #959595;
+	}
+}
+.line-2-anim {
+	animation: line2Spin 0.4s linear forwards;
+}
+@keyframes line2Spin {
+	0% {
+		transform-box: fill-box;
+		transform: rotate(0deg);
+		transform-origin: center;
+	}
+	50% {
+		transform-box: fill-box;
+		transform: rotate(180deg);
+		transform-origin: center;
+		stroke: #685dc5;
+	}
+	100% {
+		transform-box: fill-box;
+		transform: rotate(270deg);
+		transform-origin: center;
+		stroke: white;
+	}
+}
+@keyframes line2SpinBack {
+	0% {
+		transform-box: fill-box;
+		transform: rotate(270deg);
+		transform-origin: center;
+	}
+	100% {
+		transform-box: fill-box;
+		transform: rotate(0deg);
+		transform-origin: center;
+		stroke: #959595;
+	}
+}

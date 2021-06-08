@@ -1,0 +1,113 @@
+#faqSection {
+	padding-bottom: 5rem;
+}
+.faqHeader {
+	display: grid;
+	grid-template-columns: 100%;
+}
+.filterSection {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	position: relative;
+}
+
+.filterSection span {
+	align-self: center;
+}
+.filterBtn {
+	align-self: center;
+	width: 250px;
+	height: 60px;
+}
+.filterWrap {
+	border: 1px solid #dadada;
+	border-radius: 30px;
+	padding: 1rem;
+	display: inline-block;
+	font-size: 18px;
+	margin: 0px 1rem;
+	position: absolute;
+	cursor: pointer;
+	background: #fff;
+}
+.selectedOption {
+	font-weight: 500;
+	color: var(--hsu-purple);
+}
+.filterList {
+	margin: 0px;
+	max-height: 0px;
+	padding-left: 0px;
+	opacity: 0;
+	width: 100%;
+	z-index: -1;
+	transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+		z-index 0s linear 0.01s, max-height 0.3s ease-in-out 0s;
+}
+.filterOption {
+	padding: 0.2rem 0rem;
+	list-style-type: none;
+}
+.openList {
+	transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+		z-index 0s linear 0.01s, max-height 0.3s ease-in-out 0s !important;
+	max-height: 100% !important;
+	opacity: 1 !important;
+	z-index: 1 !important;
+}
+.selectedOption {
+	display: grid;
+	grid-template-columns: 1fr auto;
+}
+.btnArrow {
+	align-self: center;
+	margin-left: 1rem;
+	transform: rotate(0deg);
+	transition: transform 0.3s ease-in-out 0s;
+}
+.btnSpin {
+	transition: transform 0.3s ease-in-out 0s;
+	transform: rotate(-180deg);
+}
+.faqListItem {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	padding: 2rem 0rem 0rem;
+	border-bottom: 1px solid #dadada;
+}
+.faqAnswer {
+	max-height: 0px;
+	opacity: 0;
+	width: 100%;
+	z-index: -1;
+	transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+		z-index 0s linear 0.01s, max-height 0.3s ease-in-out 0s;
+	overflow-y: hidden;
+}
+.faqCategory {
+	display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+	.faqHeader {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		padding-bottom: 2rem;
+		border-bottom: 1px solid #dadada;
+	}
+	.filterSection {
+		justify-self: end;
+	}
+	.faqListItem {
+		display: grid;
+		grid-template-columns: 35% 1fr auto;
+	}
+
+	.faqCategory {
+		display: block;
+	}
+	.faqListItem h5,
+	.faqListItem h3 {
+		margin-top: 0px;
+	}
+}

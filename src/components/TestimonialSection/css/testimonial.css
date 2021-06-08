@@ -1,0 +1,107 @@
+#testimonialSection {
+	position: relative;
+	margin-bottom: 5rem;
+}
+.slider::before {
+	height: 200px;
+	position: absolute;
+	content: "";
+	z-index: -1;
+	width: 100vw;
+	top: -80px;
+	background: url("../../../images/background.png");
+	background-size: cover;
+}
+
+.sliderSingle {
+	background: #fff;
+	padding: 0px;
+	margin: 0rem 1rem;
+}
+.testInfo {
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	font-size: 16px;
+	padding: 1.5rem;
+}
+.testImg {
+	border-radius: 50%;
+}
+.testDetails {
+	align-self: center;
+	margin-left: 1rem;
+}
+.testName {
+	font-weight: 500;
+}
+.social {
+	align-self: center;
+}
+.testText {
+	padding: 1.5rem;
+	background: #fbfbfb;
+}
+.testContent,
+.testEdu {
+	margin: 0px auto;
+	max-width: 800px;
+}
+.testContent {
+	margin-bottom: 2rem;
+}
+.testEdu {
+	font-size: 16px;
+}
+.customArrow {
+	min-width: 40px;
+	min-height: 40px;
+	border: 1px solid #ececec;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	outline: 0;
+	z-index: 1000;
+	opacity: 1;
+	cursor: pointer;
+}
+.react-multi-carousel-list {
+	padding-bottom: 4rem;
+}
+.rightArrow {
+	bottom: 0px;
+	right: 1rem;
+}
+.leftArrow {
+	bottom: 0px;
+	right: calc(1rem + 50px);
+}
+@media only screen and (min-width: 1200px) {
+	#testimonialSection {
+		margin-bottom: 10rem;
+	}
+	.slider::before {
+		height: 396px;
+		width: 1200px;
+		left: calc(50vw - 600px);
+		top: -80px;
+		margin: 0px auto;
+		background: url("../../../images/pattern3.png");
+		background-size: cover;
+	}
+	.sliderSingle {
+		margin: 0rem 1rem;
+	}
+	.testInfo {
+		padding: 3rem;
+	}
+	.testText {
+		padding: 3rem;
+	}
+	.testContent,
+	.testEdu {
+		max-width: 600px;
+	}
+	.react-multi-carousel-list {
+		padding-bottom: 0rem;
+	}
+}

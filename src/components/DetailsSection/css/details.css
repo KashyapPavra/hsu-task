@@ -1,0 +1,91 @@
+#detailsSection {
+	display: grid;
+	grid-template-columns: 100%;
+	position: relative;
+	margin-bottom: 5rem;
+}
+.apprName {
+	justify-self: start;
+	margin: 2rem 0rem;
+}
+#detailsSection::before {
+	width: 200px;
+	height: 200px;
+	content: "";
+	position: absolute;
+	top: -70px;
+	left: 120px;
+	background: url(../../../images/designIcon.png);
+	background-size: contain;
+}
+.apprSubline {
+	margin-top: 0px;
+}
+
+.apprPosition h3 {
+	margin: 0px;
+	display: inline-block;
+}
+
+.apprCompanyName {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 14px;
+	letter-spacing: -0.14px;
+}
+.apprCompanyName span {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	letter-spacing: -0.14px;
+}
+
+.apprTime h5 {
+	margin-top: 0px;
+	margin-bottom: 1rem;
+}
+.apprGeoAndDuration {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+.apprLocation,
+.apprStartDate {
+	grid-column: 1/2;
+}
+.apprDuration,
+.apprEndDate {
+	grid-column: 2/3;
+}
+
+.apprGeoAndDuration h5 {
+	margin: 0px;
+}
+@media only screen and (min-width: 1200px) {
+	#detailsSection {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: repeat(5, auto);
+		margin-bottom: 10rem;
+	}
+
+	#detailsSection::before {
+		top: -45px;
+		left: 250px;
+	}
+	.apprGeoAndDuration {
+		font-size: 16px;
+		background: #fff;
+	}
+	#detailsSection::after {
+		bottom: -50px;
+		right: -130px;
+		height: 250px;
+		width: 500px;
+		content: "";
+		position: absolute;
+		background: url(../../../images/pattern1.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		z-index: -1;
+	}
+}

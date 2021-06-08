@@ -1,0 +1,184 @@
+#aboutSection {
+	margin-bottom: 10rem;
+}
+.apprAbout {
+	display: grid;
+	grid-template-columns: 100%;
+	margin-bottom: -6rem;
+}
+.apprImage::before {
+	content: "";
+	position: absolute;
+	inset: -20px;
+	background: url(../../../images/pattern2.png);
+	background-size: contain;
+	border-radius: 50%;
+}
+.apprImage::after {
+	content: "";
+	position: absolute;
+	inset: 0px;
+	background: url(../../../images/aboutImage.png);
+	background-size: contain;
+	border-radius: 50%;
+	z-index: 2;
+}
+.apprImage {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	margin: 20px auto;
+}
+.apprAboutText {
+	position: relative;
+	z-index: 1;
+	top: -125px;
+}
+.apprAboutText .box {
+	background-color: #fff;
+	padding-top: 155px;
+	position: relative;
+	top: -30px;
+}
+.apprAboutText::after {
+	right: 0px;
+	height: 70%;
+	position: absolute;
+	content: "";
+	z-index: -1;
+	width: 100vw;
+	top: 0;
+	left: -16px;
+	background: var(--hsu-purple);
+}
+.apprScholarship {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+.valGroup {
+	margin-bottom: 2rem;
+}
+.scholarshipVal,
+.livingVal {
+	grid-column: 1/3;
+}
+.tuitionVal {
+	grid-column: 1/2;
+}
+.remainingVal {
+	grid-column: 2/3;
+}
+.apprNumbers {
+	margin-bottom: 4rem;
+}
+.apprNumbers h5 {
+	margin-top: 0px;
+	margin-bottom: 1rem;
+}
+.amount {
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 24px;
+	letter-spacing: -0.21px;
+}
+.commGroup {
+	margin-bottom: 2rem;
+}
+.commAmt {
+	font-size: 26px;
+	font-weight: 300;
+	line-height: 35px;
+	letter-spacing: -0.18px;
+}
+.commVal {
+	position: relative;
+	padding-bottom: 3rem;
+}
+.commText {
+	position: relative;
+}
+.commText:before {
+	position: absolute;
+	width: 30px;
+	height: 1px;
+	content: "";
+	background-color: #dadada;
+	top: -10px;
+}
+.apprDivider {
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+}
+.dividerLine {
+	width: 100%;
+	height: 1px;
+	content: "";
+	background-color: #dadada;
+	align-self: center;
+}
+
+.apprDivider {
+	text-align: center;
+	margin: 0px auto 2rem;
+	font-weight: 500;
+}
+@media only screen and (min-width: 1200px) {
+	.apprAbout {
+		display: grid;
+		grid-template-rows: 1fr auto auto;
+		grid-template-columns: auto 1fr;
+		margin-bottom: 4rem;
+	}
+	.apprImage {
+		width: 380px;
+		height: 380px;
+		margin: 20px;
+	}
+	.apprAboutText {
+		z-index: 1;
+		top: 0px;
+	}
+	.apprAboutText::after {
+		width: 0px;
+		height: 0px;
+	}
+	.apprNumbers {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+	}
+	.apprScholarship {
+		grid-column: 1/2;
+		grid-row: 1/3;
+		grid-template-rows: 1fr auto;
+	}
+
+	.apprCommitment {
+		grid-column: 2/3;
+		grid-row: 1/2;
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+	.apprContract {
+		grid-column: 2/3;
+		grid-row: 2/3;
+		align-self: end;
+	}
+	.scholarshipVal .amount {
+		margin-top: 3rem;
+		font-size: 48px;
+		font-weight: 300;
+		line-height: 24px;
+		letter-spacing: -0.43px;
+	}
+	.scholarshipVal {
+		border-bottom: 1px solid var(--hsu-border-gray);
+	}
+	.livingVal {
+		margin-bottom: 0rem;
+	}
+	.remainingVal,
+	.tuitionVal {
+		margin-top: 4rem;
+	}
+}

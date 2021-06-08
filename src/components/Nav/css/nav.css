@@ -1,0 +1,22 @@
+nav {
+	display: grid;
+	grid-template-columns: auto auto;
+	background-color: var(--hsu-purple);
+	color: #fff;
+	padding: 0.5rem 1rem;
+}
+.logo {
+	font-weight: 500;
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	justify-self: start;
+}
+.hamMenu {
+	justify-self: end;
+	align-self: center;
+}
+@media only screen and (min-width: 1200px) {
+	nav {
+		padding: 1rem 1.5rem;
+	}
+}
