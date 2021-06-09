@@ -4,6 +4,7 @@ nav {
 	background-color: var(--hsu-purple);
 	color: #fff;
 	padding: 0.5rem 1rem;
+	position: relative;
 }
 .logo {
 	font-weight: 500;
@@ -15,8 +16,25 @@ nav {
 	justify-self: end;
 	align-self: center;
 }
+.applyNow {
+	display: none;
+}
 @media only screen and (min-width: 1200px) {
 	nav {
 		padding: 1rem 1.5rem;
+	}
+	.applyNow {
+		position: absolute;
+		top: 10px;
+		right: 100px;
+		color: #fff;
+		background: var(--hsu-green);
+		padding: 1.5rem;
+		border-radius: 50%;
+		width: 120px;
+		height: 120px;
+		text-align: center;
+		display: grid;
+		place-content: center;
 	}
 }
